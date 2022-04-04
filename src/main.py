@@ -1,10 +1,12 @@
+import numpy as np
+
 from algorithm_evaluator import AlgorithmEvaluator
 from data_cleaner import DataCleaner
 from data_loader import DataLoader
 from user_input_predictor import UserInputPredictor
 from weights_trainer import WeightsTrainer
 
-alpha = 0.1
+alpha = 0.01
 number_of_epochs = 1000
 
 train_file = '../data/iristrain.csv'

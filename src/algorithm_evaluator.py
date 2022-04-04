@@ -1,3 +1,6 @@
+import numpy as np
+
+
 class AlgorithmEvaluator:
     def __init__(self, perceptron, test):
         self.perceptron = perceptron

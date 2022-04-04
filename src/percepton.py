@@ -1,3 +1,5 @@
+import random
+
 import numpy as np
 
 
@@ -14,4 +16,4 @@ class Perceptron:
         return self.unit_step_function(activation)
 
     def unit_step_function(self, activation):
-        return 1 if activation >= 0 else 0
+        return 1 if activation >= self.theta else 0

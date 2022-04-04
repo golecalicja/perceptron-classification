@@ -11,13 +11,12 @@ class WeightsTrainer:
     def train_weights(self):
         np.random.seed(0)
         perceptron = Perceptron(len(self.train) - 1)
-        theta_index = 0
         for epoch in range(self.number_of_epochs):
             for row in self.train:
                 prediction = perceptron.predict_classification(row)
                 actual = row[-1]
                 error = actual - prediction
-                perceptron.weights[theta_index] += self.alpha * error
+                perceptron.theta += self.alpha * error
                 for i in range(len(row) - 1):
-                    perceptron.weights[i + 1] += self.alpha * error * row[i]
+                    perceptron.weights[i] += self.alpha * error * row[i]
         return perceptron
