@@ -7,8 +7,8 @@ from weights_trainer import WeightsTrainer
 alpha = 0.1
 number_of_epochs = 1000
 
-train_file = 'data/iristrain.csv'
-test_file = 'data/iristest.csv'
+train_file = '../data/iristrain.csv'
+test_file = '../data/iristest.csv'
 
 
 def main():

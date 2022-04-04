@@ -31,8 +31,3 @@ class AlgorithmEvaluator:
             prediction = self.perceptron.predict_classification(row)
             predictions.append(prediction)
         return predictions
-
-
-
-
-
