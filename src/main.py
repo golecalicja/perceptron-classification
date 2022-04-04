@@ -1,5 +1,3 @@
-import numpy as np
-
 from algorithm_evaluator import AlgorithmEvaluator
 from data_cleaner import DataCleaner
 from data_loader import DataLoader
