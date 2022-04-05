@@ -4,7 +4,7 @@ from data_loader import DataLoader
 from user_input_predictor import UserInputPredictor
 from weights_trainer import WeightsTrainer
 
-alpha = 0.001
+alpha = 0.0001
 number_of_epochs = 1000
 
 train_file = '../data/iristrain.csv'
