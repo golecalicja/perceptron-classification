@@ -1,4 +1,3 @@
-import numpy as np
 from percepton import Perceptron
 
 
@@ -9,7 +8,6 @@ class WeightsTrainer:
         self.number_of_epochs = number_of_epochs
 
     def train_weights(self):
-        np.random.seed(0)
         perceptron = Perceptron(len(self.train) - 1)
         for epoch in range(self.number_of_epochs):
             for row in self.train:
