@@ -4,8 +4,8 @@ from data_loader import DataLoader, get_user_input
 from user_input_predictor import UserInputPredictor
 from weights_trainer import WeightsTrainer
 
-alpha = 0.0001
-number_of_epochs = 1000
+alpha = 0.001
+number_of_epochs = 10000
 
 train_file = '../data/iristrain.csv'
 test_file = '../data/iristest.csv'
